@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+This is the static HTML page to add a contact into your contact list. It 
+contains a form that will post to the contact add servlet.
+Author Ryan Hilsabeck
+-->
+<html>
+    <head>
+        <title>Add Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css">
+            tr:nth-child(even) {background: #FFF}
+            tr:nth-child(odd) {background: #CCC}
+        </style>
+    </head>
+    <body>
+        <h2>CSC 415/515 Contacts Database Web App</h2>
+        <h2>Add a Contact</h2>
+        <b>Entries Marked * are required</b>
+        <form method = "post" action="ContactAddServlets">
+            <table border="1" cellspacing="0" cellpadding="5">
+              <tbody>
+                <tr>
+                  <td><b>First Name</b></td>
+                  <td><input type="text" name="FirstName" value="" size="25"/> * </td>
+                  </tr>
+                <tr>
+                  <td><b>Last Name</b></td>
+                  <td><input type="text" name="LastName" value="" size="25"/> * </td>
+                </tr>
+                <tr>
+                  <td><b>BirthDay</b></td>
+                  <td><input type="text" name="BirthDay" value="" size="25"/></td>
+                </tr>
+                <tr>
+                   <td><b>Phone</b></td>
+                   <td><input type="text" name="Phone" value="" size="20"/> * </td>
+                </tr>
+              </tbody>
+            </table>        
+            <br/>
+            <input type="reset" value="Reset" /><input type="submit" value="Submit" />
+        </form>
+        <br>
+         <a href="index.html">Return to Main Page</a>
+    </body>
+</html>
